@@ -28,7 +28,7 @@ jobs:
         environment:
           TTT: ttt
         command: |
-          echo "test"
+          echo "test ccc"
           env
   bbb:
     docker:
@@ -45,3 +45,9 @@ jobs:
         command: |
           echo "test bbb"
           env
+workflows:
+  version: 2
+  build_test:
+    jobs:
+      - bbb
+
