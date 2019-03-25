@@ -15,7 +15,7 @@ jobs:
         command: |
           echo "test aaa"
           env
-  build:
+  ccc:
     docker:
     - image: golang:1.12
     steps:
